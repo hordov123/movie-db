@@ -25,3 +25,4 @@ For stiling I have used combination of SCSS and Tailwind. Design of app is respo
  - Add more powerful notification system with animations and undo functionality.
  - Front page with new/popular/random movies - Probably will need to use some other API.
  - Design, look & feel improvements.
+ - Themes - Light/Dark.
