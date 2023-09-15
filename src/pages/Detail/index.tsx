@@ -19,7 +19,7 @@ const DetailPage = () => {
 
 	const movie = data?.data;
 
-	if (movie) return <>
+	if (movie && !movie.Error) return <>
 		<SearchNavigation searchOverride={() => navigate('/')}/>
 		<div className='max-w-[30rem] md:max-w-[70rem] mx-auto px-10'>
 			<div className='bg-foreground border border-white/5 rounded-2xl overflow-hidden mt-20 flex flex-col md:flex-row h-fit'>
@@ -54,7 +54,7 @@ const DetailPage = () => {
 
 	return <>
 		<SearchNavigation/>
-		<MainMessage showCondition={isError} message={'There seems to be an error, please have patience :('}/>
+		<MainMessage showCondition={isError || !!movie?.Error} message={'There seems to be an error, please have patience :('}/>
 		{!isError && <div className='h-fit max-w-[30rem] md:max-w-[70rem] mx-auto px-10 mt-20'>
 			<SkeletonLoading isLoading={true}/>
 		</div>}

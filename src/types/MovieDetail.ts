@@ -25,6 +25,7 @@ export type MovieDetail = {
  imdbRating: string;
  imdbVotes: string;
  totalSeasons: string;
+ Error: string;
 }
 
 export type Ratings = {
