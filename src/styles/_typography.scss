@@ -1,0 +1,32 @@
+
+h1, h2, h3, h4, h5, h6, p {
+  @apply text-white;
+}
+
+h1 {
+  @apply text-[2.5rem] font-extrabold;
+}
+
+h2 {
+  @apply text-[2rem] font-bold;
+}
+
+h3 {
+  @apply text-[1.5rem] font-bold;
+}
+
+h4 {
+  @apply text-[1.125rem] font-semibold;
+}
+
+h5 {
+  @apply text-[1rem] font-semibold;
+}
+
+h6 {
+  @apply text-[0.8125rem] font-semibold;
+}
+
+p {
+  @apply text-[1rem] font-medium;
+}

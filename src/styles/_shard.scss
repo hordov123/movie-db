@@ -1,0 +1,10 @@
+.shard{
+  &:after {
+    content: '';
+    @apply h-full bg-gradient-to-b from-transparent via-accent to-transparent duration-700 ease-in-out absolute left-[-1px] top-full;
+  }
+
+  &:hover:after {
+    @apply top-1/4;
+  }
+}

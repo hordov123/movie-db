@@ -1,0 +1,10 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'index';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  @apply w-screen h-screen overflow-x-hidden text-white bg-background;
+}
+
